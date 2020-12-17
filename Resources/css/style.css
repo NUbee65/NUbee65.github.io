@@ -1,0 +1,131 @@
+body{
+  background-color: rgb(242,242,242);
+}
+
+h1{
+  color: teal;
+  font-family: Georgia, serif;;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+  font-size: 24px;
+}
+
+h2{
+  color: teal;
+  font-family: Georgia, serif;;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h4{
+  color: teal;
+  font-family: Georgia, serif;;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px 0px 0px 0px;
+}
+
+body{
+  min-width:546px; // Minimum width of 546px
+  _width: expression( document.body.clientWidth > 546 ? "546px" : "auto" ); /* sets min-width for IE6 */
+}
+
+@media screen and ( max-width: 767px ) {
+img.responsive { width: 250px; }
+}
+@media screen and ( min-width:768px ) and ( max-width: 992px ) {
+img.responsive { width: 350px; }
+}
+@media screen and ( min-width: 993px ) {
+img.responsive { width: 470px; }
+}
+img.responsive { height: auto; }
+
+.full-image{
+  width: 500px;
+  float: left;
+}
+
+.main-image{
+  width: 650px;
+  float: left;
+}
+
+.comparison-image{
+  width: 450px;
+  float: center;
+}
+
+.summary-image{
+  width: 300px;
+  float: left;
+}
+
+.small-image{
+  width: 140px;
+  float: left;
+}
+
+.navbar-links{
+  float: right;
+}
+
+.navbar-brand{
+  background-color: teal;
+  padding: 6px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+}
+
+.viz-info{
+  background-color: white;
+  text-align: justify;
+  padding: 40px 20px 40px 20px;
+  height: auto;
+}
+
+.summary-info{
+  background-color: white;
+  text-align: justify;
+  padding: 40px 40px 40px 40px;
+  height: auto;
+}
+
+.table-info{
+  background-color: white;
+  padding: 40px 40px 40px 40px;
+}
+
+.comparison-info{
+  background-color: white;
+  text-align: justify;
+  padding: 40px 40px 40px 40px;
+  height: auto;
+}
+
+.main-info{
+  background-color: white;
+  text-align: justify;
+  padding: 40px 40px 40px 40px;
+  height: auto;
+}
+
+#content-container{
+  padding: 40px 40px 60px 150px;
+  visibility: visible;
+}
+
+#data-table-container{
+  padding: 40px 40px 60px 160px;
+  visibility: visible;
+}
+
+.footer{
+  background-color: rgb(169,169,169,0.15);
+  text-align: center;
+  height: 48px;
+  bottom: 0;
+  width: 100%;
+  color: whitesmoke;
+}
