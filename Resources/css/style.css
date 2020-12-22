@@ -31,14 +31,23 @@ body{
 }
 
 @media screen and ( max-width: 767px ) {
-img.responsive { width: 250px; }
+  .navbar {
+    flex-direction: column;
+  }
+  img.responsive { width: 250px; }
 }
+
 @media screen and ( min-width:768px ) and ( max-width: 992px ) {
-img.responsive { width: 350px; }
+  .navbar {
+    flex-direction: column;
+  }
+  img.responsive { width: 350px; }
 }
+
 @media screen and ( min-width: 993px ) {
-img.responsive { width: 470px; }
+  img.responsive { width: 470px; }
 }
+
 img.responsive { height: auto; }
 
 .full-image{
@@ -64,6 +73,10 @@ img.responsive { height: auto; }
 .small-image{
   width: 140px;
   float: left;
+}
+
+.navbar {
+  display: flex
 }
 
 .navbar-links{
@@ -129,3 +142,32 @@ img.responsive { height: auto; }
   width: 100%;
   color: whitesmoke;
 }
+
+
+jQuery(function(){
+
+  var minimized_elements = $('p.minimize');
+  
+  minimized_elements.each(function(){    
+      var t = $(this).text();        
+      if(t.length < 100) return;
+      
+      $(this).html(
+          t.slice(0,100)+'<span>... </span><a href="#" class="more">More</a>'+
+          '<span style="display:none;">'+ t.slice(100,t.length)+' <a href="#" class="less">Less</a></span>'
+      );
+      
+  }); 
+  
+  $('a.more', minimized_elements).click(function(event){
+      event.preventDefault();
+      $(this).hide().prev().hide();
+      $(this).next().show();        
+  });
+  
+  $('a.less', minimized_elements).click(function(event){
+      event.preventDefault();
+      $(this).parent().hide().prev().show().prev().show();    
+  });
+
+});
