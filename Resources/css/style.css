@@ -2,20 +2,22 @@ body{
   background-color: rgb(242,242,242);
 }
 
-h1{
+/*h1{
   color: teal;
   font-family: Georgia, serif;;
   font-weight: bold;
   font-stretch: extra-expanded;
   font-size: 24px;
 }
+*/
 
-h2{
+/* h2{
   color: teal;
   font-family: Georgia, serif;;
   font-weight: bold;
   font-size: 20px;
 }
+*/
 
 h4{
   color: teal;
@@ -31,6 +33,25 @@ body{
 }
 
 @media screen and ( max-width: 767px ) {
+  h1{
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    font-size: 16px;
+  }
+
+  h2 {
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  p {
+    line-height: 1.1; 
+    font-size: 10px;
+  }
   /*.navbar {
     flex-direction: column;
   }
@@ -38,6 +59,25 @@ body{
 }
 
 @media screen and ( min-width:768px ) and ( max-width: 992px ) {
+  h1{
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    font-size: 18px;
+  }
+
+  h2 {
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  p {
+    line-height: 1.1; 
+    font-size: 12px;
+  }  
 /*  .navbar {
     flex-direction: column;
   }
@@ -45,7 +85,25 @@ body{
 }
 
 @media screen and ( min-width: 993px ) {
-  
+  h1{
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    font-size: 24px;
+  }
+
+  h2 {
+    color: teal;
+    font-family: Georgia, serif;;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 1.1; 
+    font-size: 16px;
+  }  
 }
 
 img.responsive { height: auto; max-width: 100%; }
