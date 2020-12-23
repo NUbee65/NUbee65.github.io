@@ -21,40 +21,47 @@
 
     
     <div class='container'> <!-- Start of Page Container -->
+      
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Start of Navbar-->
         <div class="container"> <!-- Start of Navbar Container Div -->
           <div class="row" style="width: 100%"> <!-- Start of Navbar Container Row -->
             <div class="col-md-3"> <!-- Start of Navbar Title Column -->
-              <a class="navbar-brand" href="index.html" style="color: white;">Latitude</a>
+              <a class="navbar-brand" href="index.html" style="color: white;">Latitude</a> <!-- YOU MAY WANT TO REPLACE href="index.html" WITH html="#" -->              
             </div> <!-- End of Navbar Title Column -->
+            
+            <!-- OBSERVATION: REMOVED navbar-links CSS -->
+            <div class="col-md-9"> <!-- Start of Navbar Links Column --> 
 
-            <div class="col-md-9" navbar-links> <!-- Start of Navbar Links Column -->
-              <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+              <!-- OBSERVATION: REMOVED <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent"> -->
+              <!-- OBSERVATION: CHANGED INDENTATION, REMOVED mr-auto, AGUMENTED FORMATTING <ul class="navbar-nav mr-auto"> -->
+              <ul class="nav navbar-nav navbar-right  d-flex justify-content-end" style="width: 100%;">                            
                   
-                  <li class="nav-item dropdown"> <!-- Start of Dropdown -->
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true aria-expanded="false">
-                      Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                      <a class="dropdown-item" href="humidity.html">Humidity</a>
-                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                      <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                    </div>
-                  </li> <!-- End of Dropdown -->
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="data.html">Data</a>
-                  </li>
-                </ul>
+                <li class="nav-item dropdown"> <!-- Start of Dropdown -->
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                  </div>
+                </li> <!-- End of Dropdown -->
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+
+              </ul>
             </div> <!-- End of Navbar Links Column -->
           </div> <!-- End of Navbar Container Row -->
         </div> <!-- End of Navbar Container Div -->
       </nav> <!-- End of Navbar -->
+
 
         <div class="container" id="content-container"> <!-- Start of Content Container -->
           <div class="row"> <!-- Start of Content Row -->            
