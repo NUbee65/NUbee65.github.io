@@ -70,8 +70,7 @@
                 <h1>Cloudiness</h1>
                 <hr/>
                 <img src="Resources/assets/images/Fig3.png" alt="Missing Cloudiness Image" class="responsive"/>
-                <p class="minimize" style="padding: 15px 20px 0px 20px;">The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-                <p class="minimize" style="padding: 0px 20px 0px 20px;">After assembling the dataset, we used Matplolib to plot various aspects of the weather relative to latitude.  Factors we analyzed included: temperature, humidity, cloudiness, and wind speed.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>                
+                <p class="minimize" style="padding: 15px 20px 0px 20px;">The scatter plots City Latitude vs. Cloudiness (2020-12-23) by total earth and then for each hemisphere separately seemed less conclusive.  (Again, this was comparable to our analysis of measurements made approximately a month ago.)  There were also patterns in the data that seem to be methodology driven.  Concentrations at 100%, 75%, 40%, 20%, and 0% suggest that cloud cover readings may be human eyeballed rather than measured by radar or some other optical measurement, in that these seem to reflect quantified translations of the way that cloud cover is typically reported: cloudy, clear, partyly cloudy, etc.</p>                
               </article>              
             </div> <!-- End of Summary Column -->
                         
@@ -109,6 +108,35 @@
                 
                 </div> <!-- End of Summary Image Container -->
               </article>              
+              
+
+              <article class="viz-info">
+                <h2>Hemispheres</h2>
+                <hr/>
+                <!-- <p>Click the plots below to get a larger view.</p> -->
+
+                <div class="container"> <!-- Start of Hemispheres Image Container -->
+
+                  <div class="row"> <!-- Start of Northern Hemisphere Image Row 1-->
+                    <div class="col-sm-12"> <!-- Start of Northern Hemisphere Image Column -->
+                      <a href="Fig3-A.html">
+                        <img class="responsive" src="Resources/assets/images/Fig3-A.png" alt="Missing Northern Hemisphere Cloudiness Image"/>
+                      </a>
+                    </div> <!-- End of Northern Hemisphere Image Column -->
+                  </div> <!-- End of Northern Hemisphere Image Row 1 -->
+
+                  <div class="row"> <!-- Start of Southern Hemisphere Image Row 2-->
+                    <div class="col-sm-12"> <!-- Start of Southern Hemisphere Image Column -->
+                      <a href="Fig3-B.html">
+                        <img class="responsive" id="myImg" src="Resources/assets/images/Fig3-B.png" alt="Missing Southern Hemisphere Cloudiness Image"/>
+                      </a>                    
+                    </div> <!-- End of Southern Hemisphere Image Column -->                    
+                  </div> <!-- End of Southern Hemisphere Image Row 2 -->
+                
+                </div> <!-- End of Hemispheres Image Container -->
+              </article>              
+            
+            
             </div> <!-- End of Visualizations Column -->
 
           </div> <!-- End of Content Row -->
