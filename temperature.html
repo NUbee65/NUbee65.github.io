@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="Resources/css/style.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <title>Latitude Analysis Temperature</title>
+  </head>
+  
+  <body>
+
+    
+    <div class='container'> <!-- Start of Page Container -->
+      
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Start of Navbar-->
+        <div class="container"> <!-- Start of Navbar Container Div -->
+          <div class="row" style="width: 100%"> <!-- Start of Navbar Container Row -->
+            <div class="col-md-3"> <!-- Start of Navbar Title Column -->
+              <a class="navbar-brand" href="index.html" style="color: white;">Latitude</a> <!-- YOU MAY WANT TO REPLACE href="index.html" WITH html="#" -->              
+            </div> <!-- End of Navbar Title Column -->
+            
+            <!-- OBSERVATION: REMOVED navbar-links CSS -->
+            <div class="col-md-9"> <!-- Start of Navbar Links Column --> 
+
+              <!-- OBSERVATION: REMOVED <div class="collapse navbar-collapse navbar-links" id="navbarSupportedContent"> -->
+              <!-- OBSERVATION: CHANGED INDENTATION, REMOVED mr-auto, AGUMENTED FORMATTING <ul class="navbar-nav mr-auto"> -->
+              <ul class="nav navbar-nav navbar-right  d-flex justify-content-end" style="width: 100%;">                            
+                  
+                <li class="nav-item dropdown"> <!-- Start of Dropdown -->
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                  </div>
+                </li> <!-- End of Dropdown -->
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+
+              </ul>
+            </div> <!-- End of Navbar Links Column -->
+          </div> <!-- End of Navbar Container Row -->
+        </div> <!-- End of Navbar Container Div -->
+      </nav> <!-- End of Navbar -->
+
+
+        <div class="container" id="content-container"> <!-- Start of Content Container -->
+          <div class="row"> <!-- Start of Content Row -->            
+            <div class="col-md-8"> <!-- Start of Summary Column -->
+              <article class="main-info">
+                <h1>Max Temperature</h1>
+                <hr/>
+                <img src="Resources/assets/images/Fig1.png" alt="Missing Max Temperature Image" class="responsive"/>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">This exercise provided visual and quantitative evidence that the earth tends to get hotter toward the equator. The scatter plots for City Latitude vs. Temperature (2020-12-23), and for same variables by just Northern Hemisphere and then by just Southern Hemisphere, provide reasonable evidence that temperature and certain other weather conditions change with distance from the equator. </p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">We note that the best time of the year to measure the temperature differential by latitude would be on the Spring or Fall Equinox, when the Sun is exactly above the Equator and day and night are of equal length in Northern and Southern Hemispheres. However, we didn't have the luxury of being able to gather temperatures on those dates or to take multiple weather readings around the world over a year long period, which would have given us another method of capturing information that could cancel out effects of the earth's axis running at a 22 degree angle to the solar ecliptic.</p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">That said, with the understanding that it is now three months since the Fall Equinox, what we find is that in the Northern Hemisphere, currently right on the threshold of the Winter season, the scatter plot shows a relatively tight concentration of temperature-latitude data points that describe temperatures falling as latitudes increase from the equator toward the poles (north pole in this case). Meanwhile, the Southern Hemisphere temperature-latitude data points also describe a falling off as latitudes increase from the equator toward the poles (south pole in this case).</p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">But the Southern Hemisphere's rate of falling off is both not as great and seems less tightly concentrated as that for the Northern Hemisphere. The Northern Hemisphere temperature-latitude slope we calculated is -1.4 while the Southern Hemisphere temperature-latitude slope we calculated is 0.0. (We measured these at -1.1 and 0.3 approximately a month ago.)</p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">The difference likely reflects the longer duration of daylight in the Southern Hemisphere, but to prove this hypothesis, we would probably want to study more temperature readings at more dates through the year. And maybe through some number of years. </p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">We also observe that the latitude of cities in our sample in the Southern Hemisphere is relatively more tightly concentrated; they range generally between 0 degrees (equator) and 40 degrees South. By contrast, latitude of cities in our sample in the Northern Hemisphere is relatively more spread out; they range generally between 0 degrees (equator) and 70 degrees North. </p>
+                <p class="minimize" style="padding: 0px 20px 0px 20px;">We also note that the Northern Hemisphere has 68% of the Earth's land by area, while the Southern Hemisphere has 32%, and that the land makes up only 29% of the planet's crustal surface. We believe this reflects the study methodology of selecting a random sample of cities, and then taking temperatures for them. We believe a further important major factor for consideration is that large bodies of water generally tend to take longer to heat or to cool than does the land. The temperatures of such large bodies of water affect ambient weather conditions not only over the water but also certainly over coastal regions and very likely well beyond. The ratio of land surface area to water surface area in the Northern Hemisphere is 7:10 while that ratio is 3:10 in the Southern Hemisphere.</p>
+              </article>              
+            </div> <!-- End of Summary Column -->
+                        
+            <div class="col-md-4"> <!-- Start of Visualizations Column -->
+              <article class="viz-info">
+                <h2>Visualizations</h2>
+                <hr/>
+
+                <div class="container"> <!-- Start of Summary Image Container -->
+                  <div class="row"> <!-- Start of Summary Image Row 1-->
+                    <div class="col-sm-6"> <!-- Start of Small Image Column -->
+                      <a href="temperature.html">
+                        <img src="Resources/assets/images/Fig1.png" alt="Missing Max Temperature Image" class="responsive" style="border: 1px solid black"/>
+                      </a>                      
+                    </div> <!-- End of Summary Image Column 1 -->
+                    <div class="col-sm-6"> <!-- Start of Small Image Column -->
+                      <a href="humidity.html">
+                        <img src="Resources/assets/images/Fig2.png" alt="Missing Humidity Image" class="responsive"/>
+                      </a>                      
+                    </div> <!-- End of Summary Image Column 2 -->
+                  </div> <!-- End of Summary Image Row 1 -->
+
+                  <div class="row"> <!-- Start of Summary Image Row 2-->
+                    <div class="col-sm-6"> <!-- Start of Small Image Column -->
+                      <a href="cloudiness.html">
+                        <img src="Resources/assets/images/Fig3.png" alt="Missing Cloudiness Image" class="responsive"/>
+                      </a>                      
+                    </div> <!-- End of Summary Image Column 1 -->
+                    <div class="col-sm-6"> <!-- Start of Small Image Column -->
+                      <a href="wind.html">
+                        <img src="Resources/assets/images/Fig4.png" alt="Missing Wind Speed Image" class="responsive"/>
+                      </a>                      
+                    </div> <!-- End of Summary Image Column 2 -->
+                  </div> <!-- End of Summary Image Row 2 -->
+                
+                </div> <!-- End of Summary Image Container -->
+              </article>              
+            
+
+              <article class="viz-info">
+                <h2>Hemispheres</h2>
+                <hr/>
+                <!-- <p>Click the plots below to get a larger view.</p> -->
+
+                <div class="container"> <!-- Start of Hemispheres Image Container -->
+
+                  <div class="row"> <!-- Start of Northern Hemisphere Image Row 1-->
+                    <div class="col-sm-12"> <!-- Start of Northern Hemisphere Image Column -->
+                      <a href="Fig1-A.html">
+                        <img class="responsive" src="Resources/assets/images/Fig1-A.png" alt="Missing Northern Hemisphere Max Temperature Image"/>
+                      </a>
+                    </div> <!-- End of Northern Hemisphere Image Column -->
+                  </div> <!-- End of Northern Hemisphere Image Row 1 -->
+
+                  <div class="row"> <!-- Start of Southern Hemisphere Image Row 2-->
+                    <div class="col-sm-12"> <!-- Start of Southern Hemisphere Image Column -->
+                      <a href="Fig1-B.html">
+                        <img class="responsive" id="myImg" src="Resources/assets/images/Fig1-B.png" alt="Missing Southern Hemisphere Max Temperature Image"/>
+                      </a>                    
+                    </div> <!-- End of Southern Hemisphere Image Column -->                    
+                  </div> <!-- End of Southern Hemisphere Image Row 2 -->
+                
+                </div> <!-- End of Hemispheres Image Container -->
+              </article>              
+            
+            
+            </div> <!-- End of Visualizations Column -->
+
+          </div> <!-- End of Visualizations Column -->
+        </div> <!-- End of Content Row -->
+      </div> <!-- End of Content Container -->
+      
+    </div> <!-- End of Page Container -->
+
+    
+  </body>
+</html>
